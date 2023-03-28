@@ -132,7 +132,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
-  max-width: 15em;
+  max-width: 16em;
   overflow: hidden;
   box-shadow: #eee 0 0 40px 0;
 }
@@ -143,13 +143,18 @@ body {
   font-size: 1.714285714em;
   padding: 0.5em 0.75em;
   text-align: right;
+  margin: 7px;
 }
 
 .calculator__keys {
   background-color: #999;
   display: grid;
-  grid-gap: 1px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4px;
+  padding: 9px;
+  /* grid-template-columns: 1fr 100px 2fr 90px; */
+  grid-template-columns: 4em 4em 4em 4em;
+  font-size: 25px;
+  block-size: 12em;
 }
 
 .calculator__keys > * {
@@ -186,41 +191,4 @@ body {
 @font-face {
   font-family: displayCalc;
   src: url(../fonts/RussoOne-Regular.ttf);
-}
-
-.menu_lite {
-  height: 2em;
-  width: 2em;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 3px;
-}
-
-.title_archive {
-  padding-left: 42em;
-  color: rgb(56, 56, 56);
-  font-size: 2em;
-  font-weight: 600;
-  margin-bottom: 0.5em;
-}
-
-.header_archive {
-  border-bottom: 2px rgb(56, 56, 56);
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  position: absolute;
-  display: flex;
-  position: initial;
-}
-
-.text_archive {
-  font-size: 3em;
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  margin-top: 0.5em;
-  font-family: 'monospace';
-  text-shadow: gainsboro 0.1em 0.1em 1em;
 }
