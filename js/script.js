@@ -6,7 +6,11 @@ const calculate = (n1, operator, n2) => {
   const secondNum = parseFloat(n2);
   if (operator === "add") return firstNum + secondNum;
   if (operator === "subtract") return firstNum - secondNum;
-  if (operator === "multiply") return firstNum * secondNum;
+  if (operator === "multiply") {
+    if (firstNum != 0 && secondNum != 0)
+      return firstNum * secondNum;
+    }
+    else return 0;
   if (operator === "divide") return parseFloat((firstNum / secondNum).toFixed(8));
 };
 
@@ -132,3 +136,4 @@ keys.addEventListener("click", (e) => {
   updateCalculatorState(key, calculator, resultString, displayedNum);
   updateVisualState(key, calculator);
 });
+};
